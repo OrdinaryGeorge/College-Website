@@ -1,0 +1,184 @@
+body {
+    background: #212020;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    pointer-events: none;
+    user-select: none;
+}
+
+body a{
+    pointer-events: visible;
+    user-select: all;
+    color: blue;
+}
+
+.IntoductionMessage {
+    position: relative;
+    width: 50rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25rem;
+}
+
+img {
+    width: 4rem;
+    height: auto;
+    pointer-events: visible;
+    user-select: all;
+}
+
+iframe {
+    user-select: all;
+    pointer-events: visible;
+}
+
+li {
+    pointer-events: visible;
+    user-select: all;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.projects {
+    position: relative;
+    top: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 5rem;
+}
+
+.projects-buttons {
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.Nav-Icons {
+    filter: invert(1);
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: all;
+}
+
+/* Ligh Mode */
+
+.body-light {
+    background: white;
+    color: #282828;
+}
+
+.Nav-Icons-light {
+    filter: none;
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: all;
+}
+
+/* CONTEXT */
+
+.custom-context-menu {
+    display: none;
+    position: fixed;
+    /* background-color: #333; */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* transform: translate(0.4rem, -47rem); */
+    top: 6rem;
+    z-index: 1000;
+}
+
+.custom-context-menu br {
+    color: white;
+    background-color: white;
+}
+
+.custom-context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-context-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.custom-context-menu li:hover {
+    background-color: #4444448c;
+}
+
+input {
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: all;
+    background-color: #28282800;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.576);
+    border: #282828;
+}
+
+.input-light {
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: all;
+    background-color: #28282800;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.576);
+    border: #282828;
+    color: rgb(98, 147, 198);
+}
+
+input,
+select,
+textarea {
+    color: rgb(98, 147, 198);
+}
+
+::placeholder {
+    color: rgb(35, 189, 220);
+}
+
+button {
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: all;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.576);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+button:active {
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: all;
+    background-color: rgba(40, 141, 22, 0.268);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.576);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.EmailContainerI {
+    position: relative;
+    width: 22rem;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+    border-radius: 5px;
+    padding: 2.5rem;
+    /* background-color: #80808093; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.576);
+}
