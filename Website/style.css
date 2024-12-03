@@ -92,7 +92,18 @@ li {
 .custom-context-menu {
     display: none;
     position: fixed;
-    /* background-color: #333; */
+    background-color: #212020;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* transform: translate(0.4rem, -47rem); */
+    top: 6rem;
+    z-index: 1000;
+}
+
+.custom-context-menu-light {
+    display: none;
+    position: fixed;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     /* transform: translate(0.4rem, -47rem); */

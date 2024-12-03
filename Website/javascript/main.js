@@ -3,12 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const BackGround = document.querySelectorAll('body');
     const placeholder = document.querySelectorAll('::placeholder');
     const Icons = document.querySelectorAll('.Nav-Icons');
+    const ContextMenu = document.querySelectorAll('.custom-context-menu');
     if (CurContMode === '2') {
         console.log('Light')
         // BackGround.classList.toggle("body-light");
         // Icons.classList.toggle("Nav-Icons-light");
         Icons.forEach((userItem) => {
             userItem.classList.toggle("Nav-Icons-light");
+        });
+        ContextMenu.forEach((userItem) => {
+            userItem.classList.toggle("custom-context-menu-light");
         });
         BackGround.forEach((userItem) => {
             userItem.classList.toggle("body-light");
@@ -44,10 +48,14 @@ function SwitchContrastMode() {
     const CurContMode = localStorage.getItem('ContrastMode')
     const BackGround = document.querySelector('body');
     const Icons = document.querySelectorAll('.Nav-Icons');
+    const ContextMenu = document.querySelectorAll('.custom-context-menu');
     if (CurContMode === '1') { localStorage.setItem('ContrastMode', '2'); } else if (CurContMode === '2') { localStorage.setItem('ContrastMode', '1'); }
 
 
     BackGround.classList.toggle("body-light");
+    ContextMenu.forEach((userItem) => {
+        userItem.classList.toggle("custom-context-menu-light");
+    });
 
     Icons.forEach((userItem) => {
         userItem.classList.toggle("Nav-Icons-light");
