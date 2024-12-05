@@ -1,9 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    console.log('Brrr')
+
     var CurContMode = localStorage.getItem('ContrastMode')
     const BackGround = document.querySelectorAll('body');
     const placeholder = document.querySelectorAll('::placeholder');
     const Icons = document.querySelectorAll('.Nav-Icons');
     const ContextMenu = document.querySelectorAll('.custom-context-menu');
+
+    if (CurContMode === null) {
+        console.log('Null')
+        localStorage.setItem('ContrastMode', '1');
+        return
+    }
+
     if (CurContMode === '2') {
         console.log('Light')
         // BackGround.classList.toggle("body-light");
