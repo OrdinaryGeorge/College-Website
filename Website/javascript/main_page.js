@@ -22,3 +22,15 @@ document.addEventListener("scroll", () => {
         Project1 = true
     }
 });
+
+let Scroll = 0
+
+function ProjectsScroll() {
+    if (Scroll === 130) {
+
+    } else {
+        Scroll = Scroll + 1
+        window.scrollBy(0,10); // horizontal and vertical scroll increments
+        scrolldelay = setTimeout('ProjectsScroll()',20); // scrolls every 100 milliseconds
+    }
+}
