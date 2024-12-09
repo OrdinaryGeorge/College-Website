@@ -27,7 +27,7 @@ let Scroll = 0
 
 function ProjectsScroll() {
     if (Scroll === 130) {
-
+        Scroll = 0
     } else {
         Scroll = Scroll + 1
         window.scrollBy(0,10); // horizontal and vertical scroll increments
